@@ -41,13 +41,18 @@
 .schedule-doctor-changing {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-gap: 20px;
+	grid-gap: 30px;
 	padding: 10px 16px;
 }
 
 .schedule-doctor-changing>div {
 	padding-bottom: 48px;
-	border-radius: 50px;
+    border-radius: 10px;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fff8e0, #ffefba6b); 
+box-shadow: 0 4px 10px 0 rgba(255, 181, 70, 0.18), 0 4px 20px 0 rgb(247, 241, 218);
+
 }
 
 .schedule-doctor-changing>div hr {
