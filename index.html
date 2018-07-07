@@ -1,627 +1,597 @@
 <!DOCTYPE html>
 <html lang="uk">
-
-<head>
-    <title>Охмадит :: Дитяча лікарня майбутнього</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-    <link rel='stylesheet' href='css/header.css'>
-    <link rel='stylesheet' href='css/common.css'>
-    <link rel='stylesheet' href='css/grid.css'>
-    <link rel='stylesheet' href='css/content.css'>
-    <link rel='stylesheet' href='css/form.css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-</head>
-
-<body>
-    <header class="teal">
-        <div style="max-width:1400px; margin: auto;">
+   <head>
+      <title>Охмадит :: Дитяча лікарня майбутнього</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+      <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+      <link rel='stylesheet' href='css/header.css'>
+      <link rel='stylesheet' href='css/common.css'>
+      <link rel='stylesheet' href='css/grid.css'>
+      <link rel='stylesheet' href='css/content.css'>
+      <link rel='stylesheet' href='css/form.css'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <header class="teal">
+         <div style="max-width:1400px; margin: auto;">
             <a class="burgger-menu hide-large">
-                <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
             </a>
             <a href="#" class="logo" title="Головна сторінка">
-                <i class="fa fa-h-square"></i>
+            <i class="fa fa-h-square"></i>
             </a>
             <a href="#" class="hide-small" title="Новини">
-                <i class="fa fa-globe margin-right"></i>Новини
+            <i class="fa fa-globe margin-right"></i>Новини
             </a>
             <a href="#" class="hide-small" title="Повідомлення">
-                <i class="fa fa-envelope margin-right"></i>Повідомлення
+            <i class="fa fa-envelope margin-right"></i>Повідомлення
             </a>
             <a href="#" class="hide-small" title="Налаштування профіля">
-                <i class="fa fa-user margin-right"></i>Налаштування профіля
+            <i class="fa fa-user margin-right"></i>Налаштування профіля
             </a>
             <a href="#" class="hide-small" title="Сповіщення">
-                <i class="fa fa-bell"></i>
-                <span class="badge small-text">3</span>
+            <i class="fa fa-bell"></i>
+            <span class="badge small-text">3</span>
             </a>
-
             <a href="#" class="hide-small header-avatar" title="Мій Профіль">
-                <img src="img/avatar.jpg" style="height:30px;width:30px" alt="Аватар">
+            <img src="img/avatar.jpg" style="height:30px;width:30px" alt="Аватар">
             </a>
             <div id="navMobile" class="teal hide-small hide-large ">
-                <a href="#" class="hide-small margin-right">
-                    <i class="fa fa-globe margin-right"></i>Новини
-                </a>
-                <a href="#" class="hide-small">
-                    <i class="fa fa-envelope margin-right"></i>Повідомлення
-                </a>
-                <a href="#" class="hide-small">
-                    <i class="fa fa-bell margin-right"></i>Сповіщення
-                    <span class="badge-mobile">3</span>
-                </a>
-                <a href="#" class="hide-small">
-                    <i class="fa fa-user margin-right"></i>Налаштування профіля
-                </a>
+               <a href="#" class="hide-small margin-right">
+               <i class="fa fa-globe margin-right"></i>Новини
+               </a>
+               <a href="#" class="hide-small">
+               <i class="fa fa-envelope margin-right"></i>Повідомлення
+               </a>
+               <a href="#" class="hide-small">
+               <i class="fa fa-bell margin-right"></i>Сповіщення
+               <span class="badge-mobile">3</span>
+               </a>
+               <a href="#" class="hide-small">
+               <i class="fa fa-user margin-right"></i>Налаштування профіля
+               </a>
             </div>
-        </div>
-    </header>
-
-
-    <!-- Page Container -->
-    <div class="page-container" style="max-width:1400px;">
-
-        <!-- The Grid Main Content -->
-        <div class="content-grid">
+         </div>
+      </header>
+      <!-- Page Container -->
+      <div class="page-container" style="max-width:1400px;">
+         <!-- The Grid Main Content -->
+         <div class="content-grid">
             <div class="doctor-column">
-                <!-- Doctor Inform Column -->
-                <div class="doctor-inform-column">
-                    <div class="display-photo-container">
-                        <img src="img/yurij-gladush.jpg" style="width:100%" alt="Юрій Гладуш">
-                        <div class="doctor-name teal container">
-                            <h2>Юрій Гладуш</h2>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="container">
-                        <p>
-                            <i class="fa fa-briefcase fa-fw margin-right large-text text-teal"></i>Дитячий терапевт</p>
-                        <p>
-                            <i class="fa fa-hospital-o fa-fw margin-right large-text text-teal"></i>«Охматдит», Відділення №3</p>
-                        <p>
-                            <i class="fa fa-envelope fa-fw margin-right large-text text-teal"></i>yuriy_hladush@gmail.com</p>
-                        <p>
-                            <i class="fa fa-phone fa-fw margin-right large-text text-teal"></i>+38(098) 101-23-77</p>
-                    </div>
-                    <br>
-                    <!-- End Doctor Inform Column -->
-                </div>
-
-                <!-- Doctor Statistic Column -->
-                <div class="doctor-statistic-column">
-                    <div class="container">
-                        <p class="large-text">
-                            <b>
-                                <i class="fa fa-asterisk fa-fw margin-right text-teal"></i>Моя Статистика</b>
-                        </p>
-                        <hr>
-                        <p class="statictic-row">
-
-                            <span class="text-center hover-opacity">
-                                <i class="fa fa-star" style="font-size:32px;color:#ffb546;"></i> 4.9</span>
-                            <span class="text-center hover-opacity">
-                                <i class="fa fa fa-comments" style="font-size:32px;color:#3ebdab;"></i> 349</span>
-                            <span class="text-center hover-opacity">
-                                <i class="fa fa-thumbs-up" style="font-size:18px;color:#3ebdab"></i> 304&nbsp;&nbsp;
-                                <i class="fa fa-thumbs-down" style="font-size:18px;color:#ff5858;"></i> 10
-
-                            </span>
-                            <span class="small-text text-center text-grey">Рейтинг</span>
-                            <span class="small-text text-center text-grey">Коментарі</span>
-                            <span class="small-text text-center text-grey">Рекомендації</span>
-                        </p>
-                    </div>
-                    <!-- End Doctor Statistic Column -->
-                </div>
+               <!-- Doctor Inform Column -->
+               <div class="doctor-inform-column">
+                  <div class="display-photo-container">
+                     <img src="img/yurij-gladush.jpg" style="width:100%" alt="Юрій Гладуш">
+                     <div class="doctor-name teal container">
+                        <h2>Юрій Гладуш</h2>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="container">
+                     <p>
+                        <i class="fa fa-briefcase fa-fw margin-right large-text text-teal"></i>Дитячий терапевт
+                     </p>
+                     <p>
+                        <i class="fa fa-hospital-o fa-fw margin-right large-text text-teal"></i>«Охматдит», Відділення №3
+                     </p>
+                     <p>
+                        <i class="fa fa-envelope fa-fw margin-right large-text text-teal"></i>yuriy_hladush@gmail.com
+                     </p>
+                     <p>
+                        <i class="fa fa-phone fa-fw margin-right large-text text-teal"></i>+38(098) 101-23-77
+                     </p>
+                  </div>
+                  <br>
+                  <!-- End Doctor Inform Column -->
+               </div>
+               <!-- Doctor Statistic Column -->
+               <div class="doctor-statistic-column">
+                  <div class="container">
+                     <p class="large-text">
+                        <b>
+                        <i class="fa fa-asterisk fa-fw margin-right text-teal"></i>Моя Статистика</b>
+                     </p>
+                     <hr>
+                     <p class="statictic-row">
+                        <span class="text-center hover-opacity">
+                        <i class="fa fa-star" style="font-size:32px;color:#ffb546;"></i> 4.9</span>
+                        <span class="text-center hover-opacity">
+                        <i class="fa fa fa-comments" style="font-size:32px;color:#3ebdab;"></i> 349</span>
+                        <span class="text-center hover-opacity">
+                        <i class="fa fa-thumbs-up" style="font-size:18px;color:#3ebdab"></i> 304&nbsp;&nbsp;
+                        <i class="fa fa-thumbs-down" style="font-size:18px;color:#ff5858;"></i> 10
+                        </span>
+                        <span class="small-text text-center text-grey">Рейтинг</span>
+                        <span class="small-text text-center text-grey">Коментарі</span>
+                        <span class="small-text text-center text-grey">Рекомендації</span>
+                     </p>
+                  </div>
+                  <!-- End Doctor Statistic Column -->
+               </div>
             </div>
-
             <!-- Schedule Doctor Column -->
             <div class="schedule-doctor-column">
-                <div class="schedule-doctor-changing">
-
-                    <div class="container" style="border: none;">
-                        <h2 class="padding-16 text-grey">
-                            <i class="fa fa-calendar fa-fw margin-right text-teal" style="font-size: 36px;"></i>Мій графік роботи </h2>
-                        <hr>
-                        <p>Графік роботи можна міняти в межах однієї доби! Просимо Вас відповідально ставитись до вибраного
-                            вами графіку!</p>
-                    </div>
-
-                    <!-- Monday -->
-                    <div id="monday" class="container light-grey schedule-item">
-                        <h3 class="text-center"> Понеділок</h3>
-                        <hr>
-                        <div class="interval-list">
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08: - 10:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:00 - 15:35
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>20:00 - 22:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                        </div>
-
-                        <div class="schedule_buts">
-                            <button class="saving-but but">
-                                <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
-                            <button class="add-but but">
-                                <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
-                        </div>
-                    </div>
-
-
-                    <!-- Tuesday -->
-                    <div id="tuesday" class="container light-grey schedule-item">
-                        <h3 class="text-center">Вівторок</h3>
-                        <hr>
-                        <div class="interval-list">
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:00 - 13:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>18:20 - 19:30
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>04:00 - 07:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                        </div>
-                        <div class="schedule_buts">
-                            <button class="saving-but but">
-                                <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
-                            <button class="add-but but">
-                                <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
-                        </div>
-                    </div>
-
-                    <!-- Wenesday -->
-                    <div id="wenesday" class="container light-grey schedule-item">
-                        <h3 class="text-center"> Середа</h3>
-                        <hr>
-                        <div class="interval-list">
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:00 - 12:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:00 - 15:35
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>17:15 - 18:55
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>02:00 - 03:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>04:00 - 08:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>20:00 - 22:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                        </div>
-                        <div class="schedule_buts">
-                            <button class="saving-but but">
-                                <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
-                            <button class="add-but but">
-                                <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
-                        </div>
-                    </div>
-
-                    <!-- Thursday -->
-                    <div id="thursday" class="container light-grey schedule-item">
-                        <h3 class="text-center">Четвер</h3>
-                        <hr>
-                        <div class="interval-list">
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:30 - 12:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:30 - 15:35
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>17:25 - 18:55
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>02:00 - 03:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                        </div>
-                        <div class="schedule_buts">
-                            <button class="saving-but but">
-                                <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
-                            <button class="add-but but">
-                                <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
-                        </div>
-                    </div>
-
-                    <!-- Friday -->
-                    <div id="friday" class="container light-grey schedule-item">
-                        <h3 class="text-center">П'ятниця</h3>
-                        <hr>
-                        <div class="interval-list">
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:30 - 12:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:30 - 15:35
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                        </div>
-                        <div class="schedule_buts">
-                            <button class="saving-but but">
-                                <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
-                            <button class="add-but but">
-                                <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
-                        </div>
-                    </div>
-
-                    <!-- Suturday -->
-                    <div id="saturday" class="container light-grey schedule-item">
-                        <h3 class="text-center"> Субота</h3>
-                        <hr>
-                        <div class="interval-list">
-                            <span class="interval day">
-                                <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>17:25 - 18:55
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>02:00 - 03:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                        </div>
-                        <div class="schedule_buts">
-                            <button class="saving-but but">
-                                <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
-                            <button class="add-but but">
-                                <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
-                        </div>
-                    </div>
-
-                    <!-- Sunday -->
-                    <div id="sunday" class="container light-grey schedule-item">
-                        <h3 class="text-center"> Неділя</h3>
-                        <hr>
-                        <div class="interval-list">
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>01:00 - 04:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                            <span class="interval night">
-                                <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>20:00 - 00:00
-                                <span class="del-interval-btn">&times;</span>
-                            </span>
-                        </div>
-                        <div class="schedule_buts">
-                            <button class="saving-but but">
-                                <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
-                            <button class="add-but but">
-                                <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-
-                <!-- End Schedule Doctor Column -->
+               <div class="schedule-doctor-changing">
+                  <div class="container" style="border: none;">
+                     <h2 class="padding-16 text-grey">
+                        <i class="fa fa-calendar fa-fw margin-right text-teal" style="font-size: 36px;"></i>Мій графік роботи 
+                     </h2>
+                     <hr>
+                     <p>Графік роботи можна міняти в межах однієї доби! Просимо Вас відповідально ставитись до вибраного
+                        вами графіку!
+                     </p>
+                  </div>
+                  <!-- Monday -->
+                  <div id="monday" class="container light-grey schedule-item">
+                     <h3 class="text-center"> Понеділок</h3>
+                     <hr>
+                     <div class="interval-list">
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08: - 10:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:00 - 15:35
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>20:00 - 22:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                     </div>
+                     <div class="schedule_buts">
+                        <button class="saving-but but">
+                        <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
+                        <button class="add-but but">
+                        <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
+                     </div>
+                  </div>
+                  <!-- Tuesday -->
+                  <div id="tuesday" class="container light-grey schedule-item">
+                     <h3 class="text-center">Вівторок</h3>
+                     <hr>
+                     <div class="interval-list">
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:00 - 13:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>18:20 - 19:30
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>04:00 - 07:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                     </div>
+                     <div class="schedule_buts">
+                        <button class="saving-but but">
+                        <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
+                        <button class="add-but but">
+                        <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
+                     </div>
+                  </div>
+                  <!-- Wenesday -->
+                  <div id="wenesday" class="container light-grey schedule-item">
+                     <h3 class="text-center"> Середа</h3>
+                     <hr>
+                     <div class="interval-list">
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:00 - 12:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:00 - 15:35
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>17:15 - 18:55
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>02:00 - 03:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>04:00 - 08:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>20:00 - 22:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                     </div>
+                     <div class="schedule_buts">
+                        <button class="saving-but but">
+                        <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
+                        <button class="add-but but">
+                        <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
+                     </div>
+                  </div>
+                  <!-- Thursday -->
+                  <div id="thursday" class="container light-grey schedule-item">
+                     <h3 class="text-center">Четвер</h3>
+                     <hr>
+                     <div class="interval-list">
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:30 - 12:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:30 - 15:35
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>17:25 - 18:55
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>02:00 - 03:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                     </div>
+                     <div class="schedule_buts">
+                        <button class="saving-but but">
+                        <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
+                        <button class="add-but but">
+                        <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
+                     </div>
+                  </div>
+                  <!-- Friday -->
+                  <div id="friday" class="container light-grey schedule-item">
+                     <h3 class="text-center">П'ятниця</h3>
+                     <hr>
+                     <div class="interval-list">
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>08:30 - 12:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>13:30 - 15:35
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                     </div>
+                     <div class="schedule_buts">
+                        <button class="saving-but but">
+                        <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
+                        <button class="add-but but">
+                        <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
+                     </div>
+                  </div>
+                  <!-- Suturday -->
+                  <div id="saturday" class="container light-grey schedule-item">
+                     <h3 class="text-center"> Субота</h3>
+                     <hr>
+                     <div class="interval-list">
+                        <span class="interval day">
+                        <i class="fa fa-sun-o fa-fw text-grey margin-right"></i>17:25 - 18:55
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>02:00 - 03:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                     </div>
+                     <div class="schedule_buts">
+                        <button class="saving-but but">
+                        <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
+                        <button class="add-but but">
+                        <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
+                     </div>
+                  </div>
+                  <!-- Sunday -->
+                  <div id="sunday" class="container light-grey schedule-item">
+                     <h3 class="text-center"> Неділя</h3>
+                     <hr>
+                     <div class="interval-list">
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>01:00 - 04:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                        <span class="interval night">
+                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>20:00 - 00:00
+                        <span class="del-interval-btn">&times;</span>
+                        </span>
+                     </div>
+                     <div class="schedule_buts">
+                        <button class="saving-but but">
+                        <i class="fa fa-pencil margin-right"></i>Зберегти зміни</button>
+                        <button class="add-but but">
+                        <i class="fa fa-calendar-plus-o margin-right"></i> Добавити години</button>
+                     </div>
+                  </div>
+                  <br>
+               </div>
+               <!-- End Schedule Doctor Column -->
             </div>
-
-
             <!-- End Grid -->
-        </div>
-
-        <!-- End Page Container -->
-    </div>
-
-
-    <footer class="container teal text-center" style="margin-top: 50px;">
-        <p>Ми в соціальних мережах</p>
-        <i class="fa fa-facebook-official"></i>
-        <i class="fa fa-instagram hover-opacity"></i>
-        <i class="fa fa-snapchat hover-opacity"></i>
-        <i class="fa fa-pinterest-p hover-opacity"></i>
-        <i class="fa fa-twitter hover-opacity"></i>
-        <i class="fa fa-linkedin hover-opacity"></i>
-        <p>© Домашка Academy 2018 • UI & UX</p>
-    </footer>
-
-
-    <!--Modal Form Add Interval -->
-    <div id="form-add-interval" class="modal">
-        <span class="close-modal" title="Закрить">&times;</span>
-        <form class="modal-content container" id="time-interval-form">
+         </div>
+         <!-- End Page Container -->
+      </div>
+      <footer class="container teal text-center" style="margin-top: 50px;">
+         <p>Ми в соціальних мережах</p>
+         <i class="fa fa-facebook-official"></i>
+         <i class="fa fa-instagram hover-opacity"></i>
+         <i class="fa fa-snapchat hover-opacity"></i>
+         <i class="fa fa-pinterest-p hover-opacity"></i>
+         <i class="fa fa-twitter hover-opacity"></i>
+         <i class="fa fa-linkedin hover-opacity"></i>
+         <p>© Домашка Academy 2018 • UI & UX</p>
+      </footer>
+      <!--Modal Form Add Interval -->
+      <div id="form-add-interval" class="modal">
+         <span class="close-modal" title="Закрить">&times;</span>
+         <form class="modal-content container" id="time-interval-form">
             <h2>Добавити інтервал часу</h2>
             <hr>
             <div class="interval-time">
-                <div class="switch-container">
-                    <label class="switch">
-                        <input id="switch-day-night" type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <div class="day-time-sign">
-                    <span class="sun-sign">
-                        <i class="fa fa-sun-o fa-fw text-grey margin-right "></i>денна зміна</span>
-                    <span class="moon-sign">
-                        <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>нічна зміна</span>
-                </div>
-
-                <input id="start-time" name="start-night-time">
-                <span class="hyphen">-</span>
-                <input id="end-time" name="end-night-time">
+               <div class="switch-container">
+                  <label class="switch">
+                  <input id="switch-day-night" type="checkbox">
+                  <span class="slider round"></span>
+                  </label>
+               </div>
+               <div class="day-time-sign">
+                  <span class="sun-sign">
+                  <i class="fa fa-sun-o fa-fw text-grey margin-right "></i>денна зміна</span>
+                  <span class="moon-sign">
+                  <i class="fa fa-moon-o fa-fw text-grey margin-right"></i>нічна зміна</span>
+               </div>
+               <input id="start-time" name="start-night-time">
+               <span class="hyphen">-</span>
+               <input id="end-time" name="end-night-time">
             </div>
             <hr>
             <span class="form-attention text-grey">* денна зміна
-                <b>08:00 - 20:00</b>, нічна зміна
-                <b>00:00 - 08:00</b> і
-                <b>20:00 - 00:00</b> в межах однієї доби</span>
+            <b>08:00 - 20:00</b>, нічна зміна
+            <b>00:00 - 08:00</b> і
+            <b>20:00 - 00:00</b> в межах однієї доби</span>
             <span class="form-exeption">оорор</span>
             <hr>
             <!-- Hidden input for day-->
             <input type="hidden" name="day-name" value="">
             <div class="clearfix">
-                <button type="button" class="cancelbtn">Скасувати</button>
-                <button type="submit" class="addbtn">Добавити</button>
+               <button type="button" class="cancelbtn">Скасувати</button>
+               <button type="submit" class="addbtn">Добавити</button>
             </div>
-
-        </form>
-    </div>
-    <!--  End Modal Form Add Interval -->
-
-    <!--Modal Alert -->
-    <div id="alert-modal" class="modal">
-        <span class="close-modal" title="Закрить">&times;</span>
-        <form class="modal-content">
+         </form>
+      </div>
+      <!--  End Modal Form Add Interval -->
+      <!--Modal Alert -->
+      <div id="alert-modal" class="modal">
+         <span class="close-modal" title="Закрить">&times;</span>
+         <form class="modal-content">
             <div class="container text-center">
-                <h2>Зміни збереглися!</h2>
-                <hr>
-                <p>Зміни збереглися успішно!</p>
-                <hr>
-                <div class="clearfix">
-                    <button type="button" class="cancelbtn" style="width:100%;">Закрити</button>
-                </div>
+               <h2>Зміни збереглися!</h2>
+               <hr>
+               <p>Зміни збереглися успішно!</p>
+               <hr>
+               <div class="clearfix">
+                  <button type="button" class="cancelbtn" style="width:100%;">Закрити</button>
+               </div>
             </div>
-        </form>
-    </div>
-    <!--  End Alert -->
-
-    <!--  Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
-    <script>
-        $(document).ready(function () {
-
-            // Used to toggle the menu on smaller screens when clicking on the menu butto
-            $('.burgger-menu ').click(function () {
-                $('#navMobile').toggle();
-            });
-
-            // When the user clicks anywhere outside of the modal, close it
-            window.onclick = function (event) {
-                if (event.target == document.getElementById('form-add-interval')) {
-                    $('#form-add-interval').toggle();
-                    resetFormIntervalAdd();
-                }
-                if (event.target == document.getElementById('alert-modal')) {
-                    $('#alert-modal').toggle();
-                }
-            }
-
-            //close form event, reset form-add-interval
-            $("#form-add-interval .close-modal").click(function () {
-                $('#form-add-interval').toggle();
-                resetFormIntervalAdd();
-            });
-
-            //cose time intervalform-add-interval
-            $("#form-add-interval .cancelbtn").click(function () {
-                $('#form-add-interval').toggle();
-                resetFormIntervalAdd();
-            });
-
-
-            //close form event, reset form-add-interval
-            $("#alert-modal .close-modal").click(function () {
-                $('#alert-modal').toggle();
-            });
-
-            //cose time intervalform-add-interval
-            $("#alert-modal .cancelbtn").click(function () {
-                $('#alert-modal').toggle();
-            });
-
-            //delete some interval from day
-            $(".del-interval-btn").click(function () {
-                this.parentElement.style.display = 'none';
-
-                var dayID = $(this).parents('div.schedule-item').attr('id');
-                $('#' + dayID + ' .saving-but').show();
-
-            });
-
-            //add new time interval to day event
-            $(".add-but").click(function () {
-                $('#form-add-interval').toggle();
-                $('#time-interval-form').trigger("reset");
-
-                var dayID = $(this).parents('div.schedule-item').attr('id');
-                $('input[name="day-name"]').val(dayID);
-                $("body").css({ overflow: 'hidden' });
-            });
-
-            //save changing event
-            $(".saving-but").click(function () {
-                $('#alert-modal').toggle();
-                $(this).toggle();
-            });
-
-            // change day night interval
-            $("#switch-day-night").change(function () {
-                $('.interval-time .sun-sign').toggle();
-                $('.interval-time .moon-sign').toggle();
-            });
-
-            //add time interval submit event
-            $('#time-interval-form').on('submit', function (e) {
-                e.preventDefault();
-                var startInterval, endInterval, shift, dayName;
-
-                dayName = $("input[name='day-name']").val();
-                startInterval = $("#start-time").val();
-                endInterval = $("#end-time").val();
-                if ($('#switch-day-night').is(":checked")) {
-                    shift = 'night';
-                }
-                else {
-                    shift = 'day';
-                }
-                if (veryfyInterval(startInterval, endInterval, shift)) {
-                    $('#form-add-interval').toggle();
-                    addIntervalToDOM(shift, dayName, startInterval, endInterval);
-                    resetFormIntervalAdd();
-                }
-
-            });
-        });
-
-        //verify time
-        function veryfyInterval(startInterval, endInterval, shift) {
-            if (startInterval == '') {
-                $(".form-exeption").html('* Введіть початкову годину робочого інтервалу!');
-                $(".form-attention").hide();
-                $(".form-exeption").show();
-                return false;
-            }
-            else if (endInterval == '') {
-                $(".form-exeption").html('* Введіть кінцеву годину робочого інтервалу!');
-                $(".form-attention").hide();
-                $(".form-exeption").show();
-                return false;
-            }
-            else if (startInterval >= endInterval) {
-                $(".form-exeption").html('* Нажаль, час біжить тільки вперед.:( Стартова година інтервалу повинна бути меншою!');
-                $(".form-attention").hide();
-                $(".form-exeption").show();
-                return false;
-            }
-            else if (shift == 'night' && startInterval >= '08:00' && startInterval < '20:00') {
-                $(".form-exeption").html('* Ви вибрали нічну зміну. Нічна зміна може починатись 20:00 - 07:00, закінчуватись 21:00 - 08:00!');
-                $(".form-attention").hide();
-                $(".form-exeption").show();
-                return false;
-            }
-            else if (shift == 'night' && endInterval > '08:00' && endInterval <= '20:00') {
-                $(".form-exeption").html('* Ви вибрали нічну зміну. Нічна зміна може починатись 20:00 - 07:00, закінчуватись 21:00 - 08:00!');
-                $(".form-attention").hide();
-                $(".form-exeption").show();
-                return false;
-            }
-            else if ((shift == 'day' && startInterval < '08:00') || (shift == 'day' && startInterval >= '20:00')) {
-                $(".form-exeption").html('* Ви вибрали денну зміну. Денна зміна може починатись 08:00 - 19:00, закінчуватись 09:00 - 20:00!');
-                $(".form-attention").hide();
-                $(".form-exeption").show();
-                return false;
-            }
-            else if ((shift == 'day' && endInterval <= '08:00') || (shift == 'day' && endInterval > '20:00')) {
-                $(".form-exeption").html('* Ви вибрали денну зміну. Денна зміна може починатись 08:00 - 19:00, закінчуватись 09:00 - 20:00!');
-                $(".form-attention").hide();
-                $(".form-exeption").show();
-                return false;
-            }
-            else {
-                $(".form-attention").show();
-                $(".form-exeption").hide();
-                return true;
-            }
-        }
-
-        //add new interval to DOM
-        function addIntervalToDOM(shift, dayName, startInterval, endInterval) {
-            $('#' + dayName + ' .interval-list .' + shift + ':last').after('<span class="interval ' + shift + ' new-interval"><i class="fa fa-moon-o fa-fw text-grey margin-right"></i>' + startInterval + ' - ' + endInterval + '<span class="del-interval-btn">&times;</span></span>');
-
-            $(".del-interval-btn").click(function () {
-                this.parentElement.style.display = 'none';
-
-                var dayID = $(this).parents('div.schedule-item').attr('id');
-                $('#' + dayID + ' .saving-but').show();
-
-            });
-        }
-
-
-        //reset form
-        function resetFormIntervalAdd() {
-            $('#time-interval-form').trigger("reset");
-            $('.interval-time .moon-sign').hide();
-            $('.interval-time .sun-sign').show();
-            $("body").css({ overflow: 'inherit' });
-        }
-
-    </script>
-
-    <script>
-        $(document).ready(
-            function () {
-                $('#start-time').timepicker({
-                    timeFormat: 'HH:mm',
-                    interval: 60,
-                    dynamic: false,
-                    dropdown: true,
-                    scrollbar: false
-                });
-                $('#end-time').timepicker({
-                    timeFormat: 'HH:mm',
-                    interval: 60,
-                    dynamic: false,
-                    dropdown: true,
-                    scrollbar: false
-                });
-            }
-
-        );
-    </script>
-
-    <script>
-        $(document).ready(function () {
-            // Tooltip only Text
-            $('.del-interval-btn').hover(function () {
-                // Hover over code
-                var title = "Видалити інтервал";
-                $(this).data('tipText', title).removeAttr('title');
-                $('<p class="tooltip"></p>')
-                    .text(title)
-                    .appendTo('body')
-                    .fadeIn('slow');
-            }, function () {
-                // Hover out code
-                $(this).attr('title', $(this).data('tipText'));
-                $('.tooltip').remove();
-            }).mousemove(function (e) {
-                var mousex = e.pageX + 20; //Get X coordinates
-                var mousey = e.pageY + 10; //Get Y coordinates
-                $('.tooltip').css({ top: mousey, left: mousex })
-            });
-        });
-    </script>
-
-</body>
-
+         </form>
+      </div>
+      <!--  End Alert -->
+      <!--  Scripts -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+      <script>
+         $(document).ready(function () {
+         
+             // Used to toggle the menu on smaller screens when clicking on the menu butto
+             $('.burgger-menu ').click(function () {
+                 $('#navMobile').toggle();
+             });
+         
+             // When the user clicks anywhere outside of the modal, close it
+             window.onclick = function (event) {
+                 if (event.target == document.getElementById('form-add-interval')) {
+                     $('#form-add-interval').toggle();
+                     resetFormIntervalAdd();
+                 }
+                 if (event.target == document.getElementById('alert-modal')) {
+                     $('#alert-modal').toggle();
+                 }
+             }
+         
+             //close form event, reset form-add-interval
+             $("#form-add-interval .close-modal").click(function () {
+                 $('#form-add-interval').toggle();
+                 resetFormIntervalAdd();
+             });
+         
+             //cose time intervalform-add-interval
+             $("#form-add-interval .cancelbtn").click(function () {
+                 $('#form-add-interval').toggle();
+                 resetFormIntervalAdd();
+             });
+         
+         
+             //close form event, reset form-add-interval
+             $("#alert-modal .close-modal").click(function () {
+                 $('#alert-modal').toggle();
+             });
+         
+             //cose time intervalform-add-interval
+             $("#alert-modal .cancelbtn").click(function () {
+                 $('#alert-modal').toggle();
+             });
+         
+             //delete some interval from day
+             $(".del-interval-btn").click(function () {
+                 this.parentElement.style.display = 'none';
+         
+                 var dayID = $(this).parents('div.schedule-item').attr('id');
+                 $('#' + dayID + ' .saving-but').show();
+         
+             });
+         
+             //add new time interval to day event
+             $(".add-but").click(function () {
+                 $('#form-add-interval').toggle();
+                 $('#time-interval-form').trigger("reset");
+         
+                 var dayID = $(this).parents('div.schedule-item').attr('id');
+                 $('input[name="day-name"]').val(dayID);
+                 $("body").css({ overflow: 'hidden' });
+             });
+         
+             //save changing event
+             $(".saving-but").click(function () {
+                 $('#alert-modal').toggle();
+                 $(this).toggle();
+             });
+         
+             // change day night interval
+             $("#switch-day-night").change(function () {
+                 $('.interval-time .sun-sign').toggle();
+                 $('.interval-time .moon-sign').toggle();
+             });
+         
+             //add time interval submit event
+             $('#time-interval-form').on('submit', function (e) {
+                 e.preventDefault();
+                 var startInterval, endInterval, shift, dayName;
+         
+                 dayName = $("input[name='day-name']").val();
+                 startInterval = $("#start-time").val();
+                 endInterval = $("#end-time").val();
+                 if ($('#switch-day-night').is(":checked")) {
+                     shift = 'night';
+                 }
+                 else {
+                     shift = 'day';
+                 }
+                 if (veryfyInterval(startInterval, endInterval, shift)) {
+                     $('#form-add-interval').toggle();
+                     addIntervalToDOM(shift, dayName, startInterval, endInterval);
+                     resetFormIntervalAdd();
+                 }
+         
+             });
+         });
+         
+         //verify time
+         function veryfyInterval(startInterval, endInterval, shift) {
+             if (startInterval == '') {
+                 $(".form-exeption").html('* Введіть початкову годину робочого інтервалу!');
+                 $(".form-attention").hide();
+                 $(".form-exeption").show();
+                 return false;
+             }
+             else if (endInterval == '') {
+                 $(".form-exeption").html('* Введіть кінцеву годину робочого інтервалу!');
+                 $(".form-attention").hide();
+                 $(".form-exeption").show();
+                 return false;
+             }
+             else if (startInterval >= endInterval) {
+                 $(".form-exeption").html('* Нажаль, час біжить тільки вперед.:( Стартова година інтервалу повинна бути меншою!');
+                 $(".form-attention").hide();
+                 $(".form-exeption").show();
+                 return false;
+             }
+             else if (shift == 'night' && startInterval >= '08:00' && startInterval < '20:00') {
+                 $(".form-exeption").html('* Ви вибрали нічну зміну. Нічна зміна може починатись 20:00 - 07:00, закінчуватись 21:00 - 08:00!');
+                 $(".form-attention").hide();
+                 $(".form-exeption").show();
+                 return false;
+             }
+             else if (shift == 'night' && endInterval > '08:00' && endInterval <= '20:00') {
+                 $(".form-exeption").html('* Ви вибрали нічну зміну. Нічна зміна може починатись 20:00 - 07:00, закінчуватись 21:00 - 08:00!');
+                 $(".form-attention").hide();
+                 $(".form-exeption").show();
+                 return false;
+             }
+             else if ((shift == 'day' && startInterval < '08:00') || (shift == 'day' && startInterval >= '20:00')) {
+                 $(".form-exeption").html('* Ви вибрали денну зміну. Денна зміна може починатись 08:00 - 19:00, закінчуватись 09:00 - 20:00!');
+                 $(".form-attention").hide();
+                 $(".form-exeption").show();
+                 return false;
+             }
+             else if ((shift == 'day' && endInterval <= '08:00') || (shift == 'day' && endInterval > '20:00')) {
+                 $(".form-exeption").html('* Ви вибрали денну зміну. Денна зміна може починатись 08:00 - 19:00, закінчуватись 09:00 - 20:00!');
+                 $(".form-attention").hide();
+                 $(".form-exeption").show();
+                 return false;
+             }
+             else {
+                 $(".form-attention").show();
+                 $(".form-exeption").hide();
+                 return true;
+             }
+         }
+         
+         //add new interval to DOM
+         function addIntervalToDOM(shift, dayName, startInterval, endInterval) {
+             $('#' + dayName + ' .interval-list .' + shift + ':last').after('<span class="interval ' + shift + ' new-interval"><i class="fa fa-moon-o fa-fw text-grey margin-right"></i>' + startInterval + ' - ' + endInterval + '<span class="del-interval-btn">&times;</span></span>');
+         
+             $(".del-interval-btn").click(function () {
+                 this.parentElement.style.display = 'none';
+         
+                 var dayID = $(this).parents('div.schedule-item').attr('id');
+                 $('#' + dayID + ' .saving-but').show();
+         
+             });
+         }
+         
+         
+         //reset form
+         function resetFormIntervalAdd() {
+             $('#time-interval-form').trigger("reset");
+             $('.interval-time .moon-sign').hide();
+             $('.interval-time .sun-sign').show();
+             $("body").css({ overflow: 'inherit' });
+         }
+         
+      </script>
+      <script>
+         $(document).ready(
+             function () {
+                 $('#start-time').timepicker({
+                     timeFormat: 'HH:mm',
+                     interval: 60,
+                     dynamic: false,
+                     dropdown: true,
+                     scrollbar: false
+                 });
+                 $('#end-time').timepicker({
+                     timeFormat: 'HH:mm',
+                     interval: 60,
+                     dynamic: false,
+                     dropdown: true,
+                     scrollbar: false
+                 });
+             }
+         
+         );
+      </script>
+      <script>
+         $(document).ready(function () {
+             // Tooltip only Text
+             $('.del-interval-btn').hover(function () {
+                 // Hover over code
+                 var title = "Видалити інтервал";
+                 $(this).data('tipText', title).removeAttr('title');
+                 $('<p class="tooltip"></p>')
+                     .text(title)
+                     .appendTo('body')
+                     .fadeIn('slow');
+             }, function () {
+                 // Hover out code
+                 $(this).attr('title', $(this).data('tipText'));
+                 $('.tooltip').remove();
+             }).mousemove(function (e) {
+                 var mousex = e.pageX + 20; //Get X coordinates
+                 var mousey = e.pageY + 10; //Get Y coordinates
+                 $('.tooltip').css({ top: mousey, left: mousex })
+             });
+         });
+      </script>
+   </body>
 </html>
