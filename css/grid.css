@@ -1,79 +1,72 @@
-.page-container{
-    margin: auto;
-    padding: 15px 10px 15px;
-    margin-top: 60px;
+.page-container {
+	margin: auto;
+	padding: 15px 10px 15px;
+	margin-top: 60px;
 }
-
 
 .content-grid {
-    display: grid;
-    grid-template-areas: 'doctor-column schedule-doctor-column'
-                         'doctor-column  schedule-doctor-column';
-    grid-template-columns: 380px  1fr;
-    justify-content: center;
-    grid-gap: 20px;
-
+	display: grid;
+	grid-template-areas: 'doctor-column schedule-doctor-column' 'doctor-column  schedule-doctor-column';
+	grid-template-columns: 380px 1fr;
+	justify-content: center;
+	grid-gap: 20px;
 }
 
-
-.doctor-column{
-    grid-area: doctor-column;
+.doctor-column {
+	grid-area: doctor-column;
 }
-
 
 .schedule-doctor-column {
-    grid-area: schedule-doctor-column;
+	grid-area: schedule-doctor-column;
 }
 
-.doctor-inform-column, 
-.doctor-statistic-column, 
-.schedule-doctor-column > div{
-    background-color: #fff;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+.doctor-inform-column,
+.doctor-statistic-column,
+.schedule-doctor-column>div {
+	background-color: #fff;
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-
-.doctor-statistic-column{
-    margin-top: 20px;
+.doctor-statistic-column {
+	margin-top: 20px;
 }
+
 
 /* Schedule styles */
 
 .schedule-doctor-history {
-    margin-top: 20px;
+	margin-top: 20px;
 }
 
-.schedule-doctor-changing{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap:20px;
-    padding: 10px 16px;
-
+.schedule-doctor-changing {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	padding: 10px 16px;
 }
 
-.schedule-doctor-changing > div{
-    padding-bottom: 48px;
-    border-radius: 50px;
-    }
+.schedule-doctor-changing>div {
+	padding-bottom: 48px;
+	border-radius: 50px;
+}
 
-    .schedule-doctor-changing > div hr{
-        border-top: 1px solid #848b8c;
-        }
-        .schedule-doctor-changing > div h3{
-            text-transform: uppercase;
-            }
+.schedule-doctor-changing>div hr {
+	border-top: 1px solid #848b8c;
+}
+
+.schedule-doctor-changing>div h3 {
+	text-transform: uppercase;
+}
+
+
 /* End Schedule styles */
 
-
-@media  (max-width: 992px) {
-    .content-grid {
-        grid-template-areas: 'doctor-column' 'schedule-doctor-column';
-        grid-template-columns: 1fr;
-    }
-
-    .schedule-doctor-changing{
-        grid-template-columns: 1fr;
-
-    
-    }
+@media (max-width: 992px) {
+	.content-grid {
+		grid-template-areas: 'doctor-column' 'schedule-doctor-column';
+		grid-template-columns: 1fr;
+	}
+	.schedule-doctor-changing {
+		grid-template-columns: 1fr;
+	}
 }

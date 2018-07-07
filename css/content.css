@@ -1,83 +1,97 @@
-.display-photo-container{
-    position: relative;
+.display-photo-container {
+	position: relative;
 }
 
-.doctor-name{
-    width: 200px;
+.doctor-name {
+	width: 200px;
 }
 
 .statictic-row {
-    display: grid;
-    grid-template-columns: minmax(100px, 1fr)  minmax(100px, 1fr)  minmax(100px, 1fr);
-    justify-content: center;
-    line-height: 36px;
+	display: grid;
+	grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+	justify-content: center;
+	line-height: 36px;
 }
 
 .statictic-row span {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 
 /* Time Interval Styles*/
 
-.interval-list{
-    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
-   grid-column-gap: 10px;
-   grid-row-gap: 20px;
-   padding: 10px;
+.interval-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+	padding: 10px;
 }
 
 .interval {
-    display: inline-block;
-    padding: 0 25px;
-    height: 50px;
-    font-size: 16px;
-    line-height: 50px;
-    border-radius: 25px;
-   
+	display: inline-block;
+	padding: 0 25px;
+	height: 50px;
+	font-size: 16px;
+	line-height: 50px;
+	border-radius: 25px;
 }
 
-
 .del-interval-btn {
-    padding-left: 10px;
-    color: #888;
-    font-weight: bold;
-    float: right;
-    font-size: 20px;
-    cursor: pointer;
+	padding-left: 10px;
+	color: #888;
+	font-weight: bold;
+	float: right;
+	font-size: 20px;
+	cursor: pointer;
 }
 
 .del-interval-btn:hover {
-    color: #000;
+	color: #000;
 }
 
-.night{
-    background: #3ec6ce;
+.night {
+	background: #3ec6ce;
 }
 
 .day {
-    background-color: #ffb546;
+	background-color: #ffb546;
 }
 
 .new-interval {
-    -webkit-animation: bordershow 5s linear; /* Safari 4.0 - 8.0 */
-    animation: bordershow 5s linear;
+	-webkit-animation: bordershow 5s linear;
+	/* Safari 4.0 - 8.0 */
+	animation: bordershow 5s linear;
 }
+
 
 /* Safari 4.0 - 8.0 */
+
 @-webkit-keyframes bordershow {
-    0%   {background-color: #ff5858; color: #ffffff}
-    50%   {color: #131313}
-    100% { }
+	0% {
+		background-color: #ff5858;
+		color: #ffffff
+	}
+	50% {
+		color: #131313
+	}
+	100% {}
 }
 
+
 /* Standard syntax */
+
 @keyframes bordershow {
-    0%   {background-color: #ff5858; color: #ffffff}
-    50%   {color: #131313}
-    100% { }
+	0% {
+		background-color: #ff5858;
+		color: #ffffff
+	}
+	50% {
+		color: #131313
+	}
+	100% {}
 }
+
 
 /* End Time Interval Styles*/
 
@@ -85,60 +99,68 @@
 /* Schedule Button Styles*/
 
 .schedule_buts {
-    display: flex;
-    display: -webkit-flex; 
-justify-content: flex-end;
-margin-top:20px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: flex-end;
+	margin-top: 20px;
 }
 
-.but{
-    position: relative;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-    margin: auto;
-    font-size: 18px;
-    margin-top: 10px;
+.but {
+	position: relative;
+	border: none;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	-webkit-transition-duration: 0.4s;
+	/* Safari */
+	transition-duration: 0.4s;
+	text-decoration: none;
+	overflow: hidden;
+	cursor: pointer;
+	margin: auto;
+	font-size: 18px;
+	margin-top: 10px;
 }
+
 .add-but {
-    background-color: #5e7684;
-    color: #ffffff;
+	background-color: #5e7684;
+	color: #ffffff;
 }
 
-.add-but:hover {background-color: #0dd0be; color: #000;}
+.add-but:hover {
+	background-color: #0dd0be;
+	color: #000;
+}
 
 .saving-but {
-    background-color: #ff5858;
-    color: #ffffff;
-    display: none;
+	background-color: #ff5858;
+	color: #ffffff;
+	display: none;
 }
 
-.saving-but:hover {background-color: #0dd0be; color: #000000;}
+.saving-but:hover {
+	background-color: #0dd0be;
+	color: #000000;
+}
 
 .but:after {
-    content: "";
-    background: #90EE90;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px!important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
+	content: "";
+	background: #90EE90;
+	display: block;
+	position: absolute;
+	padding-top: 300%;
+	padding-left: 350%;
+	margin-left: -20px!important;
+	margin-top: -120%;
+	opacity: 0;
+	transition: all 0.8s
 }
 
 .but:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
+	padding: 0;
+	margin: 0;
+	opacity: 1;
+	transition: 0s
 }
 
 
@@ -146,45 +168,54 @@ margin-top:20px;
 
 
 /* Alert Styes */
+
 .alert {
-    padding: 20px;
-    background-color: #f44336;
-    color: white;
+	padding: 20px;
+	background-color: #f44336;
+	color: white;
 }
 
 .alert .closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
-.alert.success {background-color: #4CAF50;}
-.alert.info {background-color: #2196F3;}
-.alert.warning {background-color: #ff9800;}
+.alert.success {
+	background-color: #4CAF50;
+}
+
+.alert.info {
+	background-color: #2196F3;
+}
+
+.alert.warning {
+	background-color: #ff9800;
+}
 
 .alert .closebtn:hover {
-    color: black;
+	color: black;
 }
+
+
 /*End Alert Styes */
 
-@media  (max-width: 992px) {
-    .doctor-name{
-        width: 100%;
-        text-align:center;
-    }
+@media (max-width: 992px) {
+	.doctor-name {
+		width: 100%;
+		text-align: center;
+	}
 }
 
-
-@media  (max-width: 600px) {
-    .schedule_buts {
-
-        -webkit-flex-wrap: wrap; /* Safari */
-        flex-wrap: wrap;
-    }
+@media (max-width: 600px) {
+	.schedule_buts {
+		-webkit-flex-wrap: wrap;
+		/* Safari */
+		flex-wrap: wrap;
+	}
 }
-

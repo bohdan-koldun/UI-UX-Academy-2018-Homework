@@ -1,299 +1,319 @@
 input[type=text] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
 }
+
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
+
+input[type=text]:focus,
+input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
 }
 
+
 /* Set a style for all buttons */
+
 .modal-content button {
-    background-color: #009688;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-    font-size: 18px;
+	background-color: #009688;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	opacity: 0.9;
+	font-size: 18px;
 }
 
 .modal-content button:hover {
-    opacity:1;
+	opacity: 1;
 }
+
 
 /* Extra styles for the cancel button */
+
 .modal-content .cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+	padding: 14px 20px;
+	background-color: #f44336;
 }
 
-#time-interval-form h2{
-    text-align: center;
+#time-interval-form h2 {
+	text-align: center;
 }
+
 
 /* Float cancel and signup buttons and add an equal width */
-.modal-content .cancelbtn, .modal-content .addbtn {
-  float: left;
-  width: 50%;
+
+.modal-content .cancelbtn,
+.modal-content .addbtn {
+	float: left;
+	width: 50%;
 }
+
 
 /* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(71, 78, 93, 0.85);
-    padding-top: 50px;
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgba(71, 78, 93, 0.85);
+	padding-top: 50px;
 }
 
+
 /* Modal Content/Box */
+
 .modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 85%; /* Could be more or less, depending on screen size */
-    max-width:620px;
+	background-color: #fefefe;
+	margin: 5% auto 15% auto;
+	/* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 85%;
+	/* Could be more or less, depending on screen size */
+	max-width: 620px;
 }
- 
+
+
 /* The close-modal Button (x) */
+
 .close-modal {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
+	position: absolute;
+	right: 35px;
+	top: 15px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #f1f1f1;
 }
 
 .close-modal:hover,
 .close-modal:focus {
-    color: #f44336;
-    cursor: pointer;
+	color: #f44336;
+	cursor: pointer;
 }
 
+
 /* Clear floats */
+
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+	content: "";
+	clear: both;
+	display: table;
 }
 
 input[type="number"] {
-    width: 100px;
-  }
-  
-  input + span {
-    padding-right: 30px;
-  }
-  
-  .interval-time{
-      display: grid;
-      grid-template-areas: 'switch-container day-time-sign start-time hyphen end-time' ;
-     grid-template-columns: 70px 160px  150px 20px 150px;
-     justify-content: center;
-      grid-gap: 10px;
-  }
-
-.day-time-sign{
-    grid-area: day-time-sign;
+	width: 100px;
 }
 
-.hyphen{
-    grid-area: hyphen;
+input+span {
+	padding-right: 30px;
 }
+
+.interval-time {
+	display: grid;
+	grid-template-areas: 'switch-container day-time-sign start-time hyphen end-time';
+	grid-template-columns: 70px 160px 150px 20px 150px;
+	justify-content: center;
+	grid-gap: 10px;
+}
+
+.day-time-sign {
+	grid-area: day-time-sign;
+}
+
+.hyphen {
+	grid-area: hyphen;
+}
+
 .day-time-sign,
 .hyphen,
-.day-time-sign{
-    line-height:48px;
-    text-align: center;
-    font-size: 18px
-}
-.switch-container{
-    grid-area: switch-container;
-    text-align: center;
+.day-time-sign {
+	line-height: 48px;
+	text-align: center;
+	font-size: 18px
 }
 
-#start-time{
-    grid-area: start-time;
+.switch-container {
+	grid-area: switch-container;
+	text-align: center;
 }
 
-#end-time{
-    grid-area: end-time;
+#start-time {
+	grid-area: start-time;
 }
 
+#end-time {
+	grid-area: end-time;
+}
 
 .interval-time input {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 18px;
-    background-color: white;
-    background-image: url('../img/clockicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 10px 20px 10px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+	width: 130px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 18px;
+	background-color: white;
+	background-image: url('../img/clockicon.png');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 10px 20px 10px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+
+.fa-sun-o,
+.fa-moon-o {
+	color: yellow;
+}
+
+.interval-time .moon-sign {
+	display: none;
 }
 
 
-  .fa-sun-o, .fa-moon-o {
-      color: yellow;
-  }
+/* Switch Styles*/
 
-  .interval-time .moon-sign{
-    display:none;
-     }
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	margin-top: 6px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ffb546;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #5e7684;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
 
 
-  /* Switch Styles*/
+/* Rounded sliders */
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
 
 
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    margin-top: 6px;
-  }
-  
-  .switch input {display:none;}
-  
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffb546;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #5e7684;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }
-
- /* End Switch Styles*/
+/* End Switch Styles*/
 
 
 /* Exeption Styles */
-.form-exeption{
-    display: none;
-    color: #f44336;
+
+.form-exeption {
+	display: none;
+	color: #f44336;
 }
+
+
 /* End Exeption Styles */
 
+
 /* Change styles for cancel button and signup button on extra small screens */
+
 @media screen and (max-width: 300px) {
-    .cancelbtn, .addbtn {
-       width: 100%;
-    }
+	.cancelbtn,
+	.addbtn {
+		width: 100%;
+	}
 }
 
+@media (max-width: 992px) {
+	.close-modal {
+		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.interval-time {
+		grid-template-areas: 'switch-container day-time-sign day-time-sign' 'start-time hyphen end-time';
+		grid-template-columns: 1fr 10px 1fr;
+		grid-row-gap: 20px;
+	}
+	.interval-time input {
+		font-size: 14px;
+	}
+	#start-time {
+		justify-self: right;
+	}
+	#end-time,
+	.day-time-sign {
+		justify-self: left;
+		font-size: 14px;
+	}
+	.switch-container {
+		justify-self: center;
+	}
+	.form-attention {
+		font-size: 14px;
+	}
+}
 
 @media (max-width: 992px) {
-    .close-modal {
-        display: none;
-    }
-    
-    }
+	.close-modal {
+		display: none;
+	}
+}
 
-    @media (max-width: 720px) {
-        .interval-time{
-            
-            grid-template-areas: 'switch-container day-time-sign day-time-sign' 'start-time hyphen end-time' ;
-           grid-template-columns: 1fr 10px 1fr;
-           grid-row-gap: 20px;
-        
-        }
-        
-        .interval-time input {
-            font-size: 14px;
-
-        }
-
-        #start-time{
-            justify-self: right;
-        }
-
-        #end-time,
-        .day-time-sign{
-            justify-self: left;
-            font-size: 14px;
-        }
-
-        .switch-container{
-            justify-self: center;
-        }
-
-        .form-attention{
-            font-size: 14px;
-        }
-
-    }
-
-    @media (max-width: 992px) {
-        .close-modal {
-            display: none;
-        }
-        
-        }
-    
-        @media (max-width: 500px){
-           
-            
-            .interval-time input {
-                width: 100px;
-    
-            }
-
-    
-        }
+@media (max-width: 500px) {
+	.interval-time input {
+		width: 100px;
+	}
+}
