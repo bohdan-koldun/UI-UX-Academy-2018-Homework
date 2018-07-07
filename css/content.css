@@ -69,14 +69,14 @@
 @-webkit-keyframes bordershow {
     0%   {background-color: #ff5858; color: #ffffff}
     50%   {color: #131313}
-    100% { background-color: none; }
+    100% { }
 }
 
 /* Standard syntax */
 @keyframes bordershow {
     0%   {background-color: #ff5858; color: #ffffff}
     50%   {color: #131313}
-    100% { background-color: none; }
+    100% { }
 }
 
 /* End Time Interval Styles*/
