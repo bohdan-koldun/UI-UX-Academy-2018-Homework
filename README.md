@@ -1,1 +1,1 @@
-# UI-UX-Academy-2018-Homework
+#  Домашка UI & UX Binary Studio Academy 2018
